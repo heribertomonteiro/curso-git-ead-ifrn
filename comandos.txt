@@ -1,0 +1,39 @@
+Heriberto Costa Monteiro
+
+git clone https://gitlab.com/mizael.cortez/curso-branchs-ifrn-ead.git
+
+cd curso-branchs-ifrn-ead
+
+git add texto.txt
+
+git commit -m "adição do arquivo texto.txt com nome e sobrenome"
+
+git switch -c feature-1
+
+git add texto.txt
+
+git commit -m "remoção do sobrenome do arquivo texto.txt"
+
+git switch main
+
+git add texto.txt
+
+git commit -m "adição da cidade no arquivo texto.txt"
+
+git merge feature-1
+
+git add texto.txt
+
+git commit -m "versão coerente no arquivo texto.txt"
+
+git switch -c add-comandos
+
+git add comandos.txt
+
+git commit -m "adição da lista de comandos utilizados na atividade"
+
+git remote add origin-atividade https://github.com/heribertomonteiro/curso-git-ead-ifrn.git
+
+git push origin-atividade main
+
+git push origin-atividade add-comandos
